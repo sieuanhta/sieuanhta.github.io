@@ -152,6 +152,22 @@ h1 {
   text-decoration: none;
 }
 
+.profile-links .cv-link,
+.footer-links .cv-link {
+  padding: 0.28rem 0.62rem;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.profile-links .cv-link:hover,
+.footer-links .cv-link:hover {
+  border-color: var(--accent-dark);
+  background: var(--accent-dark);
+  color: #ffffff;
+}
+
 .section-nav {
   display: flex;
   gap: 0.75rem 1.6rem;
