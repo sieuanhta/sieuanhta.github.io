@@ -17,18 +17,17 @@ A minimal, responsive academic homepage built with plain HTML and CSS. It has no
 
 ## Edit personal information
 
-Open `index.html` and search for `TODO`. Each value that still needs attention is marked in an HTML comment or shown as placeholder text.
+The page content is based on the current `cv.pdf`. Open `index.html` to edit the biography, research summaries, publications, awards, and contact links.
 
-At minimum, update:
+The remaining TODO is to add a verified Google Scholar profile URL when one is available. When the CV changes, also review:
 
-- the biography in the `#about` section;
-- `YOUR_EMAIL@example.com` in the header and footer;
-- `YOUR_PROFILE_ID` in both Google Scholar links;
-- the research descriptions and project links;
-- the publication and honors placeholders;
+- the biography and current affiliations;
+- research descriptions and manuscript statuses;
+- publication metadata and links;
+- honors and awards;
 - the “Last updated” date in the footer when appropriate.
 
-The GitHub links already point to `https://github.com/sieuanhta`. The canonical and Open Graph URLs already use `https://sieuanhta.github.io/`.
+The GitHub, LinkedIn, email, canonical, and Open Graph values are already populated.
 
 ## Add or remove research projects
 
@@ -38,7 +37,7 @@ In `index.html`, find `<section id="research">`. Each project is one block begin
 <article class="research-item">
 ```
 
-Copy a complete block to add a project, or remove one complete block to delete it. Keep the project description to one to three sentences. When links are available, replace each placeholder span with an anchor, for example:
+Copy a complete block to add a project, or remove one complete block to delete it. Keep the project description to one to three sentences. When links are available, add anchors to `.item-links`, for example:
 
 ```html
 <p class="item-links" aria-label="Project links">
@@ -49,9 +48,9 @@ Copy a complete block to add a project, or remove one complete block to delete i
 
 ## Add publications
 
-Publications are grouped by year inside `<section id="publications">`. Copy the existing `.publication-year` section for a new year, and copy the `.publication` article for each additional publication in that year.
+Publications are grouped by current status or year inside `<section id="publications">`. Copy an existing `.publication-year` section for a new group, and copy a `.publication` article for each additional publication in that group.
 
-Replace every placeholder with verified information. The supported metadata links are Paper, PDF, Code, and DOI. Use one of these status labels as appropriate: `Published`, `Accepted`, `Under Review`, or `Preprint`.
+Use only verified information. The supported metadata links are Paper, PDF, Code, and DOI. Status labels can include `Published`, `Accepted`, `Under Review`, `Preprint`, or `In Preparation`.
 
 Example metadata:
 
@@ -65,7 +64,7 @@ Example metadata:
 </p>
 ```
 
-For honors, use the commented `.award-list` example in `index.html` and keep each entry in the format `Award — Organization/Event — Year`.
+For honors, copy an existing `.award-list li` entry and keep the format `Award — Organization/Event — Year`.
 
 ## Replace the CV
 
