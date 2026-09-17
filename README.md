@@ -72,6 +72,12 @@ Replace `cv.pdf` in the repository root with the current CV and keep the filenam
 
 Before committing, open `http://localhost:8000/cv.pdf` during local testing to confirm the new file loads.
 
+## Recommender page
+
+The private-facing recommender page is available at `/recommenders/`. It directs recommenders to the external Dropbox File Request for recommendation-letter submission.
+
+The page is intentionally excluded from the main navigation and includes `noindex, nofollow` search-engine directives. Do not put confidential recommendation letters, Dropbox credentials, or uploaded files in this repository.
+
 ## Test locally
 
 No installation or build is needed. From the repository root, start any static file server. With Python 3:
