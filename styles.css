@@ -154,11 +154,16 @@ h1 {
 
 .profile-links .cv-link,
 .footer-links .cv-link {
-  padding: 0.28rem 0.62rem;
-  border: 1px solid var(--accent);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.42rem 0.72rem;
+  border: 2px solid var(--accent);
   background: var(--accent);
   color: #ffffff;
+  font-weight: 750;
+  letter-spacing: 0.01em;
   line-height: 1.2;
+  box-shadow: 0 1px 0 rgba(28, 29, 27, 0.18);
 }
 
 .profile-links .cv-link:hover,
